@@ -19,7 +19,7 @@ spring:
         locator:
           # Enable the locator
           # This property enables the service locator, which allows the gateway to discover services
-          enabled: true
+          enabled: false
           # Flag to indicate whether the service id should be in lower case
           # This property is used to control the case of the service id
           # Default value is false
@@ -42,3 +42,8 @@ info:
     name: 'gateway-server'
     version: '1.0.0'
     description: 'Gateway description'
+
+logging:
+  level:
+    in:
+      cg: DEBUG
